@@ -31,7 +31,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 2. yarn serve运行本地服务
 ![启动本地web服务](./imgs/2.png)   
 
-3. 在xxshop-andriod项目的MainActivity中
+3. 在[xxshop-andriod](https://github.com/Gerry1218/xxstore-android)项目的MainActivity中
 ![设置本地服务url](./imgs/1.png)
 设置Url为本地服务的url
 
