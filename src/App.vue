@@ -7,6 +7,7 @@
       <label>消息: {{ msg }}</label>
       <label>平台: {{ platform }}</label>
     </div>
+    <input class="text" name="测试"/>
   </div>
 </template>
 
@@ -76,6 +77,11 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
+}
+
+.text {
+  /* background-color: aquamarine;
+  height: 40px; */
 }
 
 .btn {
