@@ -25,7 +25,17 @@ export default {
 
   }, 
   beforeCreate() {
-      console.log('onCreate')
+    // h5调试工具
+    const script = document.createElement("script");
+        script.src = "//cdn.jsdelivr.net/npm/eruda";
+        document.body.appendChild(script);
+        script.onload = function () {
+          window.eruda.init({
+            tool: ["console", "network", "sources", "Settings", "Resources", "Elements"],
+          });
+        };
+        
+      console.log('beforeCreate')
       this.$bridge.registerHandler('callJS', (data, responseCallback)=> {
         console.log("data: ", data)
         let cbData = JSON.parse(data)
